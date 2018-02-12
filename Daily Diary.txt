@@ -1,0 +1,91 @@
+Week 1 29th Jan - 2nd Feb
+Monday 29th
+Start: 
+Induction to VR room and initial meeting with supervisor.
+
+End: 
+Had meeting with supervisor, access to the VR room is coming soon.
+
+Tuesday 30h
+Start:
+Research into Unity vs Unreal engine as to which is preferred engine (suspect Unity as I have experience in it)
+Look into what libraries exist for starting VR development
+
+End:
+As expected, nothing about Unreal really pulls me to go against my natural instincts to use the familiar environment of Unity.
+Steam VR for vive and VRTK as existing toolkits / SDKs. I found some great looking tutorials from developer of these named "StoneFox", watch these to get idea of capabilities so I don't reinvent the wheel
+
+Wednesday 31st
+Start:
+Not working on MMP today
+
+End:
+" "
+
+Thursday 1st
+Start:
+Do research on existing free VR games to see interaction methods and what feels good, what is fun, what seems doable
+
+End:
+Created "Doc of Thoughts" as minddump on what I was thinking while trying different games.
+
+Friday 2nd
+Start:
+Another day researching existing VR experiences.
+
+End:
+More updates to "Doc of Thoughts"
+
+
+
+Week 2 5th Feb - 9th Feb
+Monday 5th
+Start:
+Begin writing Outline Project Spec, start creating SCRUM tasklist to work with
+
+End:
+Have Excel document to act as tasklist currently, there may be better way to do this.
+
+Tuesday 6th
+Start:
+Writing project spec requires some idea of exact task to be tackled, so mindstorm possible game ideas.
+
+End:
+Created Unity3D project to write little spke solutions in. With this I created a GitHub to store the project.
+My game idea moving forward for testing is to play a "dodgeball" style game, with enemy towers that fire balls at you, you must dodge and catch and throw them back to defeat them
+
+Wednesday 7th
+Start:
+Work from home with Unity adding previously mentioned Steam VR and VRTK, write some basic C# scripts to manually play with component system in Unity
+
+End:
+I have some playable on desktop Unity project, with basic collision detection and "enemies".
+
+Thursday 8th
+Start:
+Go to Campus to build and playtest basic VR interactions with hardware.
+
+End:
+Campus system out of date, could not test game with VR equipment. Instead played with example scenes from VRTK.
+
+Friday 9th
+Sart:
+Go to Campus to build and playtest basic VR interactions with hardware.
+
+End:
+Can now playtest my own project within virtual reality, have working headset and controllers with playspace.
+
+SPRINT SUMMARY
+I like the format of this Daily Diary, it helps me to see what I planned on doing, and what I got done in short easy to parse form.
+The tasklist is still giving me pause for thought, but I think getting used to the SCRUM way of working will make it 2nd nature sooner rather than later.
+I have ordered a HTC Vive to arrive beginning next week so I can test from home and during out of hours times. This will be especially important come the Easter holidays
+Next sprint I hope to have finished a simple, single level using my own code Unity to perform a couple of different tasks, to do with interaction and the worlds reaction.
+Having an idea for my final idea, being a momentum based throwing game with different scenarios, gives me something to work towards, it may be too simple, may be too complex, but I can see how this progresses this sprint cycle to better size what I can achieve.
+
+Week 3 12th Feb - 16th Feb
+Monday 12th
+Start:
+Clean up and add all currently existing documents to GitHub, continue work on creating base physics of game.
+
+End:
+I collated and tidied up the documents which weren't on GitHub, including touching up the ReadMe and giving the TaskList some colour.
