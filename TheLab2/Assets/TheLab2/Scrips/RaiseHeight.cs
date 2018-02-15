@@ -8,9 +8,9 @@ public class RaiseHeight : MonoBehaviour {
 	void Start () {
 		
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    private void FixedUpdate()
+    {
         this.transform.position += Vector3.up * Time.deltaTime;
     }
 }

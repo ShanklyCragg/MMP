@@ -390,8 +390,17 @@
     <Compile Include="Assets\SteamVR\Scripts\SteamVR_TrackedObject.cs" />
     <Compile Include="Assets\SteamVR\Scripts\SteamVR_UpdatePoses.cs" />
     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Utils.cs" />
+    <Compile Include="Assets\Supercyan Character Pack Free Sample\Scripts\CameraLogic.cs" />
+    <Compile Include="Assets\Supercyan Character Pack Free Sample\Scripts\Demo.cs" />
+    <Compile Include="Assets\Supercyan Character Pack Free Sample\Scripts\SimpleCharacterControl.cs" />
+    <Compile Include="Assets\TheLab2\Scrips\ArtificialGravity.cs" />
+    <Compile Include="Assets\TheLab2\Scrips\AttachToParent.cs" />
     <Compile Include="Assets\TheLab2\Scrips\CollisionDetector.cs" />
+    <Compile Include="Assets\TheLab2\Scrips\MoveSideways.cs" />
     <Compile Include="Assets\TheLab2\Scrips\PressSpaceToFire.cs" />
+    <Compile Include="Assets\TheLab2\Scrips\RaiseHeight.cs" />
+    <Compile Include="Assets\TheLab2\Scrips\Spin.cs" />
+    <Compile Include="Assets\TheLab2\Scrips\UpdateNormal.cs" />
     <Compile Include="Assets\VRTK\Examples\ExampleResources\Scripts\Archery\Arrow.cs" />
     <Compile Include="Assets\VRTK\Examples\ExampleResources\Scripts\Archery\ArrowNotch.cs" />
     <Compile Include="Assets\VRTK\Examples\ExampleResources\Scripts\Archery\ArrowSpawner.cs" />

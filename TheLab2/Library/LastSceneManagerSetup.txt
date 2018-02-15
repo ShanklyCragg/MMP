@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/TheLab2/Scenes/Dodgeball.unity
+- path: Assets/TheLab2/Scenes/MovingTruck.unity
   isLoaded: 1
   isActive: 1

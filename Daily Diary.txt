@@ -89,3 +89,28 @@ Clean up and add all currently existing documents to GitHub, continue work on cr
 
 End:
 I collated and tidied up the documents which weren't on GitHub, including touching up the ReadMe and giving the TaskList some colour.
+
+Tuesday 13
+Start:
+Install Vive at residance, get up and running.
+
+End:
+Tutorial with supervisor, idea of angular momentum as in space for artificial gravity came up.
+
+Wednesday 14th
+Start:
+Ill day
+
+End:
+
+Thuhrsday 15th
+Start:
+Last couple of days were relativy unproductive, focus on working in Unity today with regard to throwing physics
+
+End:
+Spent most of day working with ray casting and becoming more familiar with object manipulation. Also used debug tools.
+
+Friday 16th
+Start:
+
+End:
