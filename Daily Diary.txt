@@ -109,8 +109,10 @@ Last couple of days were relativy unproductive, focus on working in Unity today 
 
 End:
 Spent most of day working with ray casting and becoming more familiar with object manipulation. Also used debug tools.
+Found out the VR Simulator works VERY differently to the actual Vive. Need to work out why.
 
 Friday 16th
 Start:
+Work out whats weird with real Vr interactions compared to Simulated VR
 
 End:
