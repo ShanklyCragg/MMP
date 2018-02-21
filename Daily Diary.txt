@@ -126,3 +126,14 @@ Officially begin "Scene 1", with prototype assets.
 
 End:
 Lots of work on scaling and perception within VR, it's a surpringly tricky process. Have the field on which to build interactions now, with wonderful free colourful prototype assets from unity asset store.
+
+Tuesday 20th
+Start: Supervisor meeting, work on scene 1
+
+End: Idea of centriguge / centripital forces from meeting, where ball appears to fall or bounce with a sidways motion to it like a circle.
+
+Wednesday 30th
+Start: Start work on Centripital force, and boundy floors
+
+End:
+Custom controller commands for grip to reset ball posision, and "physics materials" experimentation.

@@ -395,6 +395,7 @@
     <Compile Include="Assets\TheLab2\Scrips\Ball.cs" />
     <Compile Include="Assets\TheLab2\Scrips\CollisionDetector.cs" />
     <Compile Include="Assets\TheLab2\Scrips\MoveSideways.cs" />
+    <Compile Include="Assets\TheLab2\Scrips\ObjectToHand.cs" />
     <Compile Include="Assets\TheLab2\Scrips\PressSpaceToFire.cs" />
     <Compile Include="Assets\TheLab2\Scrips\RaiseHeight.cs" />
     <Compile Include="Assets\TheLab2\Scrips\Spin.cs" />
