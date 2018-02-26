@@ -132,8 +132,46 @@ Start: Supervisor meeting, work on scene 1
 
 End: Idea of centriguge / centripital forces from meeting, where ball appears to fall or bounce with a sidways motion to it like a circle.
 
-Wednesday 30th
-Start: Start work on Centripital force, and boundy floors
+Wednesday 21st
+Start: Start work on Centripital force, and bouncy floors
 
 End:
 Custom controller commands for grip to reset ball posision, and "physics materials" experimentation.
+
+Thursday 22nd
+Start: See how difficult it is to add "Centripital forces" to Unity
+
+End: Hard... no progress made with regards to implementation.
+
+Friday 23rd
+Start: Focus on interaction between ball and floor. Currently they "slide" over each other as if no friction.
+
+End: Adding RigidBody to room fixes friction issue. The weight of ball must be smaller than floor to not fall through.
+
+
+SPRINT SUMMARY
+Most of the issues relating to angular physics are solved by doing things the "right way" in unity, and not from nice scripting.
+All this "Momentum" and "centriguge" and all seems to be solved by the engine.
+So finding something the engine DOESN'T do seems to be the key here is we want to follow this route.
+I'm thinking spinning around on the inside of a cylinder, what happens if you throw the ball past the mid point?
+I guess you lose it and it drops to the opposite side of the world.
+This still seems to have very little in terms of coding to do.
+
+Some more ideas totally different include being the "driver" of an old steam train, so the interactions include:
+Shovelling coal into the furnace, this increases a gage with "fuel" on it, keeps the train running.
+Pumping water into a bucket, and emptying bucket into the water tank. Again with another gage for feedback.
+(Too much water reduces fuel as engine not as efficient, too much coal burns all water very quick)
+Holes might appear in the water pipe, and you'd have to use some tape in the area to fix it.
+Balencing these 3 acts might be enough.
+
+
+
+
+
+Week5 26th Feb - 2nd Mar
+Monday 26th
+Start:
+Work on new idea. Again. Playing with triggers and user friendly interaction as key ala cooking simulator.
+
+End:
+Cleaned up scene with working inertia/angular momentum. Worked on "SteamTrain" scene, added coal spawner and trigger, with shovel interaction.

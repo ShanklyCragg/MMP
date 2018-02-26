@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/TheLab2/Scenes/Scene 1 - Room Ball and Target.unity
+- path: Assets/TheLab2/Scenes/SteamTrain.unity
   isLoaded: 1
   isActive: 1
