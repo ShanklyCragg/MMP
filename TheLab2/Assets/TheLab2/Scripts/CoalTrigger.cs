@@ -6,6 +6,9 @@ public class CoalTrigger : MonoBehaviour
 {
 
     public string tagToCompare = "Coal";
+    public GameObject coalGuage;
+
+    private GuageNeedle _coalGuageScript;
 
     void OnTriggerEnter(Collider col)
     {
@@ -13,6 +16,8 @@ public class CoalTrigger : MonoBehaviour
         if (col.transform.root.tag == tagToCompare)
         {
             Debug.Log("coal entered");
+            _coalGuageScript = coalGuage.GetComponent<GuageNeedle>();
+            _coalGuageScript.coalAmount += 5;
         }
     }
 

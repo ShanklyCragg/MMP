@@ -175,3 +175,14 @@ Work on new idea. Again. Playing with triggers and user friendly interaction as 
 
 End:
 Cleaned up scene with working inertia/angular momentum. Worked on "SteamTrain" scene, added coal spawner and trigger, with shovel interaction.
+
+Tuesday 27th
+Start: No MMP work today
+
+End: ""
+
+Wednesday 28th
+Start: Work on Guage for coal interaction. With increasing difficulty.
+
+End: Have basic guage working, with coal trigger connection.
+
