@@ -64,13 +64,13 @@ public class RandomCoalSpawning : MonoBehaviour
         //Max int is exclusive
         int rnd = Random.Range(0, 3);
 
-        //The Bullet instantiation happens here.
-        GameObject Temporary_Bullet_Handler;
-        Temporary_Bullet_Handler = Instantiate(Coals[rnd], Coal_Emitter.transform.position, Coal_Emitter.transform.rotation) as GameObject;
+        //The Object instantiation happens here.
+        GameObject TemporaryCoalHandler;
+        TemporaryCoalHandler = Instantiate(Coals[rnd], Coal_Emitter.transform.position, Coal_Emitter.transform.rotation) as GameObject;
 
         //Retrieve the Rigidbody component from the instantiated Bullet and control it.
         Rigidbody Temporary_RigidBody;
-        Temporary_RigidBody = Temporary_Bullet_Handler.GetComponent<Rigidbody>();
+        Temporary_RigidBody = TemporaryCoalHandler.GetComponent<Rigidbody>();
     }
 
 }

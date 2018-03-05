@@ -165,9 +165,6 @@ Holes might appear in the water pipe, and you'd have to use some tape in the are
 Balencing these 3 acts might be enough.
 
 
-
-
-
 Week5 26th Feb - 2nd Mar
 Monday 26th
 Start:
@@ -185,4 +182,20 @@ Wednesday 28th
 Start: Work on Guage for coal interaction. With increasing difficulty.
 
 End: Have basic guage working, with coal trigger connection.
+
+Thursday 1st
+Start: Implementing "temperature", start with it's interaction with coal first.
+
+End: 2nd gauge for temperature with variable increases based on amount of coal added
+
+Friday 2nd
+Start: Work on poster for CS38220 assignment
+
+End: Majority of text written for poster, 2 sections to be finished.
+
+Week 6 5th Mar - 9th Mar
+Monday 5th
+Start: Create water spawner, and water entrance to pour in
+
+End: Spent 90% of time reading about non-convex meshs. Bloody buckets. Think I'll have to make my own.
 
