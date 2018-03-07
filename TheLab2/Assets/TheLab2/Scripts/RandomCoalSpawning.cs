@@ -5,8 +5,8 @@ using UnityEngine;
 public class RandomCoalSpawning : MonoBehaviour
 {
 
-    public GameObject Coal_Emitter;
-    public GameObject[] Coals;
+    public GameObject ObjectEmitter;
+    public GameObject[] Object;
 
     public float maxTime = 5;
     public float minTime = 2;
@@ -65,12 +65,12 @@ public class RandomCoalSpawning : MonoBehaviour
         int rnd = Random.Range(0, 3);
 
         //The Object instantiation happens here.
-        GameObject TemporaryCoalHandler;
-        TemporaryCoalHandler = Instantiate(Coals[rnd], Coal_Emitter.transform.position, Coal_Emitter.transform.rotation) as GameObject;
+        GameObject TemporaryObjectHandler;
+        TemporaryObjectHandler = Instantiate(Object[rnd], ObjectEmitter.transform.position, ObjectEmitter.transform.rotation) as GameObject;
 
         //Retrieve the Rigidbody component from the instantiated Bullet and control it.
         Rigidbody Temporary_RigidBody;
-        Temporary_RigidBody = TemporaryCoalHandler.GetComponent<Rigidbody>();
+        Temporary_RigidBody = TemporaryObjectHandler.GetComponent<Rigidbody>();
     }
 
 }

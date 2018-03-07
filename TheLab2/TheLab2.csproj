@@ -410,6 +410,7 @@
     <Compile Include="Assets\TheLab2\Scripts\Spin.cs" />
     <Compile Include="Assets\TheLab2\Scripts\TempGaugeNeedle.cs" />
     <Compile Include="Assets\TheLab2\Scripts\UpdateNormal.cs" />
+    <Compile Include="Assets\TheLab2\Scripts\WaterDeleter.cs" />
     <Compile Include="Assets\TheLab2\Scripts\WaterSpawner.cs" />
     <Compile Include="Assets\TheLab2\Scripts\WaterTrigger.cs" />
     <Compile Include="Assets\VRTK\Examples\ExampleResources\Scripts\Archery\Arrow.cs" />

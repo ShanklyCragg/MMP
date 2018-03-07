@@ -199,3 +199,12 @@ Start: Create water spawner, and water entrance to pour in
 
 End: Spent 90% of time reading about non-convex meshs. Bloody buckets. Think I'll have to make my own.
 
+Tuesday 6th:
+Start: No work today
+
+End: ""
+
+Wednesday 7th
+Start: Manually create bucket, fix water causing FPS issues
+
+End: Bucket added, water now despawns at ground level or after 13 seconds.

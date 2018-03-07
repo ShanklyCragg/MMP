@@ -5,8 +5,8 @@ using UnityEngine;
 public class WaterSpawner : MonoBehaviour
 {
 
-    public GameObject Water_Emitter;
-    public GameObject Water;
+    public GameObject ObjectEmitter;
+    public GameObject Object;
 
     public float maxTime = 5;
     public float minTime = 2;
@@ -49,13 +49,17 @@ public class WaterSpawner : MonoBehaviour
         //Reset time to start
         time = 0;
 
+        float randPosX = Random.Range(-0.08f, 0.08f);
+        float randPosZ = Random.Range(-0.08f, 0.08f);
+        Vector3 randPosArray = new Vector3(randPosX, 0, randPosZ);
+
         //The Object instantiation happens here.
-        GameObject TemporaryCoalHandler;
-        TemporaryCoalHandler = Instantiate(Water, Water_Emitter.transform.position, Water_Emitter.transform.rotation) as GameObject;
+        GameObject TemporaryObjectHandler;
+        TemporaryObjectHandler = Instantiate(Object, (ObjectEmitter.transform.position + randPosArray), ObjectEmitter.transform.rotation) as GameObject;
 
         //Retrieve the Rigidbody component from the instantiated Bullet and control it.
         Rigidbody Temporary_RigidBody;
-        Temporary_RigidBody = TemporaryCoalHandler.GetComponent<Rigidbody>();
+        Temporary_RigidBody = TemporaryObjectHandler.GetComponent<Rigidbody>();
     }
 
 }

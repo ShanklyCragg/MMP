@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 135407776385514642}
   - component: {fileID: 23800389164294034}
   - component: {fileID: 54901125831840332}
+  - component: {fileID: 114344228764713978}
   m_Layer: 0
   m_Name: WaterDroplet
   m_TagString: Water
@@ -99,6 +100,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 2
+--- !u!114 &114344228764713978
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1640159527192100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30d2149ddb6f8a841bb438eebdc63002, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!135 &135407776385514642
 SphereCollider:
   m_ObjectHideFlags: 1
