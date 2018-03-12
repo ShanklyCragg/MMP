@@ -208,3 +208,20 @@ Wednesday 7th
 Start: Manually create bucket, fix water causing FPS issues
 
 End: Bucket added, water now despawns at ground level or after 13 seconds.
+
+Thursday 8th
+Start: Fixup poster writing and find references for further reading
+
+End: Poster designed and finilized really well, happy with the outcome aesthetically and verbally.
+
+Friday 9th
+Start: Create custom furnace in Blender
+
+End: This ended up being very unproductive, not going to focus on visuals anytime soon with the lack of progress here.
+
+
+Week 7 12th Mar - 16th Mar
+Monday 12th
+Start: Create interaction with coal spawner "breaking" and needing to be hit to fix.
+
+End:

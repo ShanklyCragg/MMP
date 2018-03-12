@@ -36,6 +36,7 @@ public class RandomCoalSpawning : MonoBehaviour
         {
             SpawnObject();
             SetRandomTime();
+            BreakMachine();
         }
     }
 
@@ -71,6 +72,16 @@ public class RandomCoalSpawning : MonoBehaviour
         //Retrieve the Rigidbody component from the instantiated Bullet and control it.
         Rigidbody Temporary_RigidBody;
         Temporary_RigidBody = TemporaryObjectHandler.GetComponent<Rigidbody>();
+    }
+
+    //Randomly disable the script
+    void BreakMachine()
+    {
+        int isBreak = Random.Range(0, 1000);
+        if (isBreak < 50)
+        {
+            (GetComponent("RandomCoalSpawning") as MonoBehaviour).enabled = false;
+        }
     }
 
 }

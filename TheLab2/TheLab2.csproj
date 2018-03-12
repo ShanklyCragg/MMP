@@ -395,6 +395,7 @@
     <Compile Include="Assets\TheLab2\Scripts\CoalGaugeNeedle.cs" />
     <Compile Include="Assets\TheLab2\Scripts\CoalTrigger.cs" />
     <Compile Include="Assets\TheLab2\Scripts\CollisionDetector.cs" />
+    <Compile Include="Assets\TheLab2\Scripts\FixCoalSpawner.cs" />
     <Compile Include="Assets\TheLab2\Scripts\FixVRTKInteraction.cs" />
     <Compile Include="Assets\TheLab2\Scripts\MoveSideways.cs" />
     <Compile Include="Assets\TheLab2\Scripts\ObjectToHand.cs" />
