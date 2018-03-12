@@ -17,7 +17,7 @@ public class WaterTrigger : MonoBehaviour
         {
             Debug.Log("water entered");
             _tempGuageScript = tempGuage.GetComponent<TempGaugeNeedle>();
-            _tempGuageScript.Temperature -= 0.001f;
+            _tempGuageScript.Temperature -= 1f;
             Destroy(col.gameObject);
         }
     }
