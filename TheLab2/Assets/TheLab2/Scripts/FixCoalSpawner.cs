@@ -5,6 +5,9 @@ using System.Collections;
 //h ttps://github.com/thestonefox/VRTK/issues/643
 public class FixCoalSpawner : MonoBehaviour
 {
+
+    private int count = 0;
+
     void Start()
     {
         CreateTouchEvent();
@@ -28,6 +31,20 @@ public class FixCoalSpawner : MonoBehaviour
     private void ObjectTouched(object sender, InteractableObjectEventArgs e)
     {
         Debug.Log("Im Touched");
+
+        count += 1;
+
+        if (count == 3)
+        {
+            count = 0;
+
+            //turn on coal spawner script
+            (GetComponent("RandomCoalSpawning") as MonoBehaviour).enabled = true;
+
+            //turn off this script
+            (GetComponent("FixCoalSpawner") as MonoBehaviour).enabled = false;
+        }
+
     }
 
 }

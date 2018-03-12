@@ -81,6 +81,8 @@ public class RandomCoalSpawning : MonoBehaviour
         if (isBreak < 50)
         {
             (GetComponent("RandomCoalSpawning") as MonoBehaviour).enabled = false;
+            (GetComponent("FixCoalSpawner") as MonoBehaviour).enabled = true;
+
         }
     }
 
