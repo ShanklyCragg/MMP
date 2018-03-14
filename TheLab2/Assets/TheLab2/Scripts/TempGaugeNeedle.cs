@@ -27,17 +27,20 @@ public class TempGaugeNeedle : MonoBehaviour {
 
     void CalculateTemperature()
     {
-        if (_coalGuageScript.coalAmount > 150)
+        if (Temperature >= 0 && Temperature <= 180)
         {
-            Temperature += 0.05f;
-        }
-        else if (_coalGuageScript.coalAmount < 50)
-        {
-            Temperature += 0.01f;
-        }
-        else
-        {
-            Temperature += 0.02f;
+            if (_coalGuageScript.coalAmount > 150)
+            {
+                Temperature += 0.05f;
+            }
+            else if (_coalGuageScript.coalAmount < 50)
+            {
+                Temperature += 0.01f;
+            }
+            else
+            {
+                Temperature += 0.02f;
+            }
         }
     }
 

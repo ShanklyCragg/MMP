@@ -398,6 +398,7 @@
     <Compile Include="Assets\TheLab2\Scripts\centrifuge\Spin.cs" />
     <Compile Include="Assets\TheLab2\Scripts\centrifuge\UpdateNormal.cs" />
     <Compile Include="Assets\TheLab2\Scripts\CoalGaugeNeedle.cs" />
+    <Compile Include="Assets\TheLab2\Scripts\CoalSpawner.cs" />
     <Compile Include="Assets\TheLab2\Scripts\CoalTrigger.cs" />
     <Compile Include="Assets\TheLab2\Scripts\FixCoalSpawner.cs" />
     <Compile Include="Assets\TheLab2\Scripts\FixVRTKInteraction.cs" />

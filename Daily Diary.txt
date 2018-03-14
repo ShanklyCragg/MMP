@@ -224,4 +224,14 @@ Week 7 12th Mar - 16th Mar
 Monday 12th
 Start: Create interaction with coal spawner "breaking" and needing to be hit to fix.
 
+End: 3 htis to fix broken coal spawner.
+
+Tuesday 13th
+Start: Flesh out breaking of coal spawner with audio/visuals
+
+End: Smoke now bellows from broken coal spawner
+
+Wednesday 14th
+Start: Work on audio for coal spawner, and reduce bloat of coal spawning scripts
+
 End:

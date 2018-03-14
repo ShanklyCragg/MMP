@@ -13,17 +13,23 @@ public class RandomCoalSpawning : MonoBehaviour
     public float maxTimeLowerLimit = 0.31f;
     public float minTimeLowerLimit = 0.51f;
 
+    public AudioSource MachineRunning;
+    public AudioSource MachineBreaking;
+
+
     //current time
     private float time;
 
     //The time to spawn the object
     private float spawnTime;
 
+
     void Start()
     {
         //Instantiate time, and initialise first random timer
         time = 0;
         SetRandomTime();
+        MachineRunning.Play();
     }
 
     void FixedUpdate()
@@ -74,7 +80,7 @@ public class RandomCoalSpawning : MonoBehaviour
         Temporary_RigidBody = TemporaryObjectHandler.GetComponent<Rigidbody>();
     }
 
-    //Randomly disable the script
+
     void BreakMachine()
     {
         int isBreak = Random.Range(0, 1000);
@@ -82,7 +88,9 @@ public class RandomCoalSpawning : MonoBehaviour
         {
             (GetComponent("RandomCoalSpawning") as MonoBehaviour).enabled = false;
             (GetComponent("FixCoalSpawner") as MonoBehaviour).enabled = true;
-
+            transform.Find("WhiteSmoke").gameObject.SetActive(true);
+            MachineRunning.Stop();
+            MachineBreaking.Play();
         }
     }
 
