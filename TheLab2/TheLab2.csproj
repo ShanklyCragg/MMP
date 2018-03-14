@@ -400,11 +400,14 @@
     <Compile Include="Assets\TheLab2\Scripts\CoalGaugeNeedle.cs" />
     <Compile Include="Assets\TheLab2\Scripts\CoalSpawner.cs" />
     <Compile Include="Assets\TheLab2\Scripts\CoalTrigger.cs" />
+    <Compile Include="Assets\TheLab2\Scripts\CrusherTrigger.cs" />
     <Compile Include="Assets\TheLab2\Scripts\FixCoalSpawner.cs" />
     <Compile Include="Assets\TheLab2\Scripts\FixVRTKInteraction.cs" />
+    <Compile Include="Assets\TheLab2\Scripts\MoveParentWithChild.cs" />
     <Compile Include="Assets\TheLab2\Scripts\ObjectToHand.cs" />
     <Compile Include="Assets\TheLab2\Scripts\PressSpaceSpawnCoal.cs" />
     <Compile Include="Assets\TheLab2\Scripts\RandomCoalSpawning.cs" />
+    <Compile Include="Assets\TheLab2\Scripts\RestrictMovement.cs" />
     <Compile Include="Assets\TheLab2\Scripts\TempGaugeNeedle.cs" />
     <Compile Include="Assets\TheLab2\Scripts\WaterDeleter.cs" />
     <Compile Include="Assets\TheLab2\Scripts\WaterSpawner.cs" />

@@ -18,7 +18,7 @@ public class CoalTrigger : MonoBehaviour
             Debug.Log("coal entered");
             _coalGuageScript = coalGuage.GetComponent<CoalGaugeNeedle>();
             _coalGuageScript.coalAmount += 5;
-            Destroy(col.gameObject, 3);
+            //Destroy(col.gameObject, 3);
         }
     }
 

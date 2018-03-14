@@ -16,13 +16,11 @@ public class RandomCoalSpawning : MonoBehaviour
     public AudioSource MachineRunning;
     public AudioSource MachineBreaking;
 
-
     //current time
     private float time;
 
     //The time to spawn the object
     private float spawnTime;
-
 
     void Start()
     {

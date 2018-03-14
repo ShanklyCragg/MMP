@@ -46,6 +46,7 @@ public class FixCoalSpawner : MonoBehaviour
 
             //Turn off smoke effect
             transform.Find("WhiteSmoke").gameObject.SetActive(false);
+
         }
 
     }
