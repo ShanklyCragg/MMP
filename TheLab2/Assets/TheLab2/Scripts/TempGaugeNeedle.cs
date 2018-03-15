@@ -46,7 +46,7 @@ public class TempGaugeNeedle : MonoBehaviour {
 
     Vector3 CalculateCurrentAngle()
     {
-        return new Vector3(Temperature - 90, 90, 0);
+        return new Vector3(0, 90, Temperature - 90);
     }
 
 }
