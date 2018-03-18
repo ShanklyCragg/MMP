@@ -6,9 +6,14 @@ public class CoalGaugeNeedle : MonoBehaviour {
 
     //over 140 is dangerous, under 50 is critically low
     public float coalAmount;
+
+    public const float coalAmountMax = 180;
+    public const float coalAmountMin = 0;
+
     public float deteriationSpeed;
     public float deteriationIncrease;
-    //private Vector3 currentAngle = new Vector3(50, 0, 0);
+    public float deteriationMax;
+
     private Vector3 currentAngle;
 
     // Use this for initialization
@@ -24,7 +29,7 @@ public class CoalGaugeNeedle : MonoBehaviour {
 
     float UpdateCoalAmount()
     {
-        if (coalAmount >= 0)
+        if (coalAmount >= coalAmountMin)
         {
             coalAmount -= deteriationSpeed;
         }
@@ -33,7 +38,7 @@ public class CoalGaugeNeedle : MonoBehaviour {
 
     float UpdateDeteriationSpeed()
     {
-        if (deteriationSpeed <= 0.2)
+        if (deteriationSpeed <= deteriationMax)
         {
             deteriationSpeed += deteriationIncrease;
         }
@@ -42,7 +47,7 @@ public class CoalGaugeNeedle : MonoBehaviour {
 
     Vector3 CalculateCurrentAngle()
     {
-        return new Vector3(0, 90, coalAmount - 90);
+        return new Vector3(0, (coalAmountMax / 2), coalAmount - (coalAmountMax/2));
     }
 
 }

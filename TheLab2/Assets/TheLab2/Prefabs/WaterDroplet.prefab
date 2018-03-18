@@ -19,10 +19,10 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4076065580771706}
+  - component: {fileID: 54901125831840332}
   - component: {fileID: 33113881528115960}
   - component: {fileID: 135407776385514642}
   - component: {fileID: 23800389164294034}
-  - component: {fileID: 54901125831840332}
   - component: {fileID: 114344228764713978}
   m_Layer: 0
   m_Name: WaterDroplet

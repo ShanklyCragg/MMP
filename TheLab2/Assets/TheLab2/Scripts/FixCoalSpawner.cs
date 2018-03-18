@@ -7,6 +7,7 @@ public class FixCoalSpawner : MonoBehaviour
 {
 
     private int count = 0;
+    private const int countNeeded = 3;
 
     void Start()
     {
@@ -34,7 +35,7 @@ public class FixCoalSpawner : MonoBehaviour
 
         count += 1;
 
-        if (count == 3)
+        if (count == countNeeded)
         {
             count = 0;
 

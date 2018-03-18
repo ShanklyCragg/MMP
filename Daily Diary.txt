@@ -234,4 +234,14 @@ End: Smoke now bellows from broken coal spawner
 Wednesday 14th
 Start: Work on audio for coal spawner, and reduce bloat of coal spawning scripts
 
-End:
+End: Audio added for running and breaking
+
+Thursday 15th
+Start: Remodel space to allow for graphical expansions to outside scenary, and inside.
+
+End: Thinned walles, moved and adapted gauges to fit.
+
+Friday 16th
+Start: Work more on decoupling actions from coal spawning script
+
+End: No progress made with this, requires more refactoring efforts.

@@ -408,6 +408,7 @@
     <Compile Include="Assets\TheLab2\Scripts\PressSpaceSpawnCoal.cs" />
     <Compile Include="Assets\TheLab2\Scripts\RandomCoalSpawning.cs" />
     <Compile Include="Assets\TheLab2\Scripts\RestrictMovement.cs" />
+    <Compile Include="Assets\TheLab2\Scripts\Score.cs" />
     <Compile Include="Assets\TheLab2\Scripts\TempGaugeNeedle.cs" />
     <Compile Include="Assets\TheLab2\Scripts\WaterDeleter.cs" />
     <Compile Include="Assets\TheLab2\Scripts\WaterSpawner.cs" />

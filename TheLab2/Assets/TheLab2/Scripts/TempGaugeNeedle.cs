@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class TempGaugeNeedle : MonoBehaviour {
 
-    public float Temperature;
+    public float temperature;
+
+    public const float tempAmountMax = 180;
+    public const float tempAmountMin = 0;
+
     private Vector3 currentAngle;
 
     public GameObject coalGuage;
@@ -27,26 +31,26 @@ public class TempGaugeNeedle : MonoBehaviour {
 
     void CalculateTemperature()
     {
-        if (Temperature >= 0 && Temperature <= 180)
+        if (temperature <= tempAmountMax)
         {
             if (_coalGuageScript.coalAmount > 150)
             {
-                Temperature += 0.05f;
+                temperature += 0.05f;
             }
             else if (_coalGuageScript.coalAmount < 50)
             {
-                Temperature += 0.01f;
+                temperature += 0.01f;
             }
             else
             {
-                Temperature += 0.02f;
+                temperature += 0.02f;
             }
         }
     }
 
     Vector3 CalculateCurrentAngle()
     {
-        return new Vector3(0, 90, Temperature - 90);
+        return new Vector3(0, (tempAmountMax/2), temperature - (tempAmountMax/2));
     }
 
 }
