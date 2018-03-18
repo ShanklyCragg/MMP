@@ -401,8 +401,12 @@
     <Compile Include="Assets\TheLab2\Scripts\CoalSpawner.cs" />
     <Compile Include="Assets\TheLab2\Scripts\CoalTrigger.cs" />
     <Compile Include="Assets\TheLab2\Scripts\CrusherTrigger.cs" />
+    <Compile Include="Assets\TheLab2\Scripts\EventManager\EventManager.cs" />
+    <Compile Include="Assets\TheLab2\Scripts\EventManager\EventTriggerTest.cs" />
+    <Compile Include="Assets\TheLab2\Scripts\EventManager\WaterDeleter.cs" />
     <Compile Include="Assets\TheLab2\Scripts\FixCoalSpawner.cs" />
     <Compile Include="Assets\TheLab2\Scripts\FixVRTKInteraction.cs" />
+    <Compile Include="Assets\TheLab2\Scripts\GameMaster.cs" />
     <Compile Include="Assets\TheLab2\Scripts\MoveParentWithChild.cs" />
     <Compile Include="Assets\TheLab2\Scripts\ObjectToHand.cs" />
     <Compile Include="Assets\TheLab2\Scripts\PressSpaceSpawnCoal.cs" />
@@ -410,7 +414,7 @@
     <Compile Include="Assets\TheLab2\Scripts\RestrictMovement.cs" />
     <Compile Include="Assets\TheLab2\Scripts\Score.cs" />
     <Compile Include="Assets\TheLab2\Scripts\TempGaugeNeedle.cs" />
-    <Compile Include="Assets\TheLab2\Scripts\WaterDeleter.cs" />
+    <Compile Include="Assets\TheLab2\Scripts\Test1.cs" />
     <Compile Include="Assets\TheLab2\Scripts\WaterSpawner.cs" />
     <Compile Include="Assets\TheLab2\Scripts\WaterTrigger.cs" />
     <Compile Include="Assets\VRTK\Examples\ExampleResources\Scripts\Archery\Arrow.cs" />
