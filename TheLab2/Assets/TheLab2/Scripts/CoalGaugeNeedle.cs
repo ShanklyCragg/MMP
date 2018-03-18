@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class CoalGaugeNeedle : MonoBehaviour {
 
-    //over 140 is dangerous, under 50 is critically low
-    public float coalAmount;
-
     public const float coalAmountMax = 180;
     public const float coalAmountMin = 0;
 
@@ -14,26 +11,24 @@ public class CoalGaugeNeedle : MonoBehaviour {
     public float deteriationIncrease;
     public float deteriationMax;
 
-    private Vector3 currentAngle;
-
     // Use this for initialization
     void Start () {
         this.transform.rotation = Quaternion.Euler(CalculateCurrentAngle());
 	}
 	
 	void FixedUpdate () {
-        coalAmount = UpdateCoalAmount();
+        GameMaster.coal = UpdateCoalAmount();
         deteriationSpeed = UpdateDeteriationSpeed();
         this.transform.rotation = Quaternion.Euler(CalculateCurrentAngle());
     }
 
     float UpdateCoalAmount()
     {
-        if (coalAmount >= coalAmountMin)
+        if (GameMaster.coal >= coalAmountMin)
         {
-            coalAmount -= deteriationSpeed;
+            GameMaster.coal -= deteriationSpeed;
         }
-        return coalAmount;
+        return GameMaster.coal;
     }
 
     float UpdateDeteriationSpeed()
@@ -47,7 +42,7 @@ public class CoalGaugeNeedle : MonoBehaviour {
 
     Vector3 CalculateCurrentAngle()
     {
-        return new Vector3(0, (coalAmountMax / 2), coalAmount - (coalAmountMax/2));
+        return new Vector3(0, (coalAmountMax / 2), GameMaster.coal - (coalAmountMax/2));
     }
 
 }

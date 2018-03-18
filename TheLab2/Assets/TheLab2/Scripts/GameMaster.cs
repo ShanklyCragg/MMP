@@ -5,8 +5,8 @@ using UnityEngine;
 public static class GameMaster
 {
 
-    public static int coal;
-    public static int temperature;
+    public static float coal = 140;
+    public static float temperature = 0;
     public static int score;
 
 }

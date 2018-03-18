@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CrusherTrigger : MonoBehaviour {
 
-    public string tagToCompare = "Coal";
+    private string tagToCompare = "Coal";
 
     void OnTriggerEnter(Collider col)
     {
