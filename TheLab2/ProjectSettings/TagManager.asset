@@ -8,6 +8,7 @@ TagManager:
   - RightController
   - Coal
   - Water
+  - Forest
   layers:
   - Default
   - TransparentFX

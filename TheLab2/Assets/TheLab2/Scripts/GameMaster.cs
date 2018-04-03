@@ -7,6 +7,8 @@ public static class GameMaster
 
     public static float coal = 140;
     public static float temperature = 0;
+    public static float speed = 5;
     public static int score;
+
 
 }

@@ -245,3 +245,27 @@ Friday 16th
 Start: Work more on decoupling actions from coal spawning script
 
 End: No progress made with this, requires more refactoring efforts.
+
+Week 8 19th Mar - 23rd Mar
+Monday 19th Mar
+Start: Prepare for MPD, begin refactoring events
+
+End: Added EventManager and decoupled game elements
+
+This week was dedicated to practising the Mid Project Demo, and working on a different modules assignment. No progress
+
+
+Week 9 26th Mar - 30th Mar
+Holiday
+
+Week 10 2nd Apr - 6th Apr
+Monday 2nd
+Start: Create environment
+
+End: Found ground, tree and train assets. Set out in a forest like scene.
+
+Tuesday 3rd
+Start: Work on procedural terrain generation through code
+
+End: Generate terrain through code, deleting moving forest is having issues
+
