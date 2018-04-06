@@ -8,11 +8,11 @@ public class ForestDeleter : MonoBehaviour {
 
     void OnTriggerEnter(Collider col)
     {
-        if (col.transform.root.tag == tagToCompare)
-        {
+        //if (col.transform.root.tag == tagToCompare)
+        //{
             Debug.Log("forestdeleter was entered!");
             Destroy(col.gameObject);
-        }
+        //}
     }
 
 }

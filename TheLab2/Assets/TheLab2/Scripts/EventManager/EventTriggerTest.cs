@@ -10,5 +10,12 @@ public class EventTriggerTest : MonoBehaviour {
         {
             EventManager.TriggerEvent("test");
         }
-	}
+
+        //Grip button on right controller
+        if (Input.GetAxis("openvr-r-grip-press") > 0.1 || Input.GetAxis("openvr-l-grip-press") > 0.1)
+        {
+            EventManager.TriggerEvent("ObjectIntoHand");
+        }
+
+    }
 }
