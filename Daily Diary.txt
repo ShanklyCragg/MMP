@@ -270,8 +270,33 @@ Start: Work on procedural terrain generation through code
 End: Generate terrain through code, deleting moving forest is having issues
 
 Wednesday 4th
-Start:
+Start: Continue working on deleting forest as it moves away
+
+End: This is turning out to be weirdly diffcult.
+
+Thursday 5th
+Start: ^^as above
+
+End: ^^as above ahhh!
+
+Friday 6th
+Start: Change focus, move pre-existing code to event system
+
+End: Added object to hand to eventmanager
+
+
+Week 11 9th Apr - 13th Apr
+Monday 9th
+Start: 
 
 End:
+
+
+Tuesday 10th
+Start: Come back to environment, isolate issue
+
+End: IT WAS RIGIDBODIES THE WHOLE TIME AHHHHH. Making the trigger have a kinematic, rigidbody solved the issue. Rolling environments now working
+Lots of different possible environment solutions. spinning world, deleting and re-adding forest. best solution is simplest, just move items back in position
+
 
 

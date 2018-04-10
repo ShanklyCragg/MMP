@@ -9,6 +9,7 @@ TagManager:
   - Coal
   - Water
   - Forest
+  - ForestSet
   layers:
   - Default
   - TransparentFX
