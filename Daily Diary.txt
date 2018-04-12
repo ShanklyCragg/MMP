@@ -303,6 +303,6 @@ Start: Project has been oddly laggy since environment was introduced, work on re
 End: Trees had rigidbodies, and colliders. Removing these has drastically increased performance. Still a minor impact however.
 
 Thursday 12th
-Start: Soemtimes trees can be seen to spawn, reposition to avoid. Begin adding "driver".
+Start: Sometimes trees can be seen to spawn, reposition to avoid. Begin adding "driver".
 
-End:
+End: Moved forest to reduce pop-in. Changed physics properties of Water to improve FPS, slowed spawn by 50%.
