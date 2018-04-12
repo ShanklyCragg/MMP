@@ -291,23 +291,6 @@
     <Compile Include="Assets\Standard Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\HighQualityBricks&amp;Walls\README.txt" />
-    <None Include="Assets\HighQualityBricks&amp;Walls\Shaders\brick-807728.shader" />
-    <None Include="Assets\HighQualityBricks&amp;Walls\Shaders\brick-957823.shader" />
-    <None Include="Assets\HighQualityBricks&amp;Walls\Shaders\brick-957827.shader" />
-    <None Include="Assets\HighQualityBricks&amp;Walls\Shaders\bricks-868344.shader" />
-    <None Include="Assets\HighQualityBricks&amp;Walls\Shaders\patch-924648.shader" />
-    <None Include="Assets\HighQualityBricks&amp;Walls\Shaders\shading-671263.shader" />
-    <None Include="Assets\HighQualityBricks&amp;Walls\Shaders\stone-805287.shader" />
-    <None Include="Assets\HighQualityBricks&amp;Walls\Shaders\texture-709723.shader" />
-    <None Include="Assets\HighQualityBricks&amp;Walls\Shaders\tile-846018.shader" />
-    <None Include="Assets\HighQualityBricks&amp;Walls\Shaders\wall-617961.shader" />
-    <None Include="Assets\HighQualityBricks&amp;Walls\Shaders\wall-846013.shader" />
-    <None Include="Assets\HighQualityBricks&amp;Walls\Shaders\wall-846015.shader" />
-    <None Include="Assets\HighQualityBricks&amp;Walls\Shaders\wood-731407.shader" />
-    <None Include="Assets\HighQualityBricks&amp;Walls\Shaders\wood-877000.shader" />
-    <None Include="Assets\HighQualityBricks&amp;Walls\Shaders\wood-877365.shader" />
-    <None Include="Assets\HighQualityBricks&amp;Walls\Shaders\wood-938698.shader" />
     <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
     <None Include="Assets\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />

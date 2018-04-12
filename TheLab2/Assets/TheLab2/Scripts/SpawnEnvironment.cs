@@ -10,7 +10,7 @@ public class SpawnEnvironment : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        for (int i = -50; i <= 50; i = i+10)
+        for (int i = -30; i <= 70; i = i+10)
         {
             var curForest = Instantiate(Forest, new Vector3(0, 0, i), TrainCoords.rotation);
             curForest.parent = GameObject.Find("Forest").transform;
