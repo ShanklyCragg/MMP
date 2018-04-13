@@ -411,6 +411,7 @@
     <Compile Include="Assets\TheLab2\Scripts\ObjectToHand.cs" />
     <Compile Include="Assets\TheLab2\Scripts\RandomCoalSpawning.cs" />
     <Compile Include="Assets\TheLab2\Scripts\RestrictMovement.cs" />
+    <Compile Include="Assets\TheLab2\Scripts\RestrictRotation.cs" />
     <Compile Include="Assets\TheLab2\Scripts\Score.cs" />
     <Compile Include="Assets\TheLab2\Scripts\SpawnEnvironment.cs" />
     <Compile Include="Assets\TheLab2\Scripts\TempGaugeNeedle.cs" />

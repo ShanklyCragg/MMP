@@ -306,3 +306,10 @@ Thursday 12th
 Start: Sometimes trees can be seen to spawn, reposition to avoid. Begin adding "driver".
 
 End: Moved forest to reduce pop-in. Changed physics properties of Water to improve FPS, slowed spawn by 50%.
+
+Friday 13th
+Start: Begin adding lever to water spawner.
+
+End: Finished Ethics forms. Rotational values are weird, in inspecter they can be negative but in code always between 0-360. Restricting rotational movement is awkward because of this. Lever is physically functional.
+
+

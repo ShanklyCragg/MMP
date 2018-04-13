@@ -13,6 +13,8 @@ public class RestrictMovement : MonoBehaviour {
     public float zLower = -1000;
     public float zUpper = 1000;
 
+
+
     // Use this for initialization
     void Start () {
 		
@@ -20,9 +22,14 @@ public class RestrictMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (this.transform.position.x < xLower)
+        RestrictPositionMovement();
+    }
+
+    private void RestrictPositionMovement()
+    {
+        if (this.transform.position.x < xLower)
         {
-            this.transform.position = new Vector3( xLower, this.transform.position.y, this.transform.position.z);
+            this.transform.position = new Vector3(xLower, this.transform.position.y, this.transform.position.z);
         }
         if (this.transform.position.x > xUpper)
         {
@@ -45,4 +52,6 @@ public class RestrictMovement : MonoBehaviour {
             this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, zUpper);
         }
     }
+
 }
+
