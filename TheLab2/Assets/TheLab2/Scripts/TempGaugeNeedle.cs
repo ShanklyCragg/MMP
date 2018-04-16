@@ -25,15 +25,15 @@ public class TempGaugeNeedle : MonoBehaviour {
         {
             if (GameMaster.coal > 150)
             {
-                GameMaster.temperature += 0.05f;
+                GameMaster.temperature += 0.09f;
             }
             else if (GameMaster.coal < 50)
             {
-                GameMaster.temperature += 0.01f;
+                GameMaster.temperature += 0.03f;
             }
             else
             {
-                GameMaster.temperature += 0.02f;
+                GameMaster.temperature += 0.06f;
             }
         }
     }

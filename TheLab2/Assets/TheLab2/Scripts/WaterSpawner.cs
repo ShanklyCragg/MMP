@@ -49,6 +49,7 @@ public class WaterSpawner : MonoBehaviour
         //Reset time to start
         time = 0;
 
+        //Set random position to spawn particle
         float randPosX = Random.Range(-0.08f, 0.08f);
         float randPosZ = Random.Range(-0.08f, 0.08f);
         Vector3 randPosArray = new Vector3(randPosX, 0, randPosZ);
@@ -56,10 +57,6 @@ public class WaterSpawner : MonoBehaviour
         //The Object instantiation happens here.
         GameObject TemporaryObjectHandler;
         TemporaryObjectHandler = Instantiate(Object, (ObjectEmitter.transform.position + randPosArray), ObjectEmitter.transform.rotation) as GameObject;
-
-        //Retrieve the Rigidbody component from the instantiated Bullet and control it.
-        Rigidbody Temporary_RigidBody;
-        Temporary_RigidBody = TemporaryObjectHandler.GetComponent<Rigidbody>();
     }
 
 }

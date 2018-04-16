@@ -72,10 +72,6 @@ public class RandomCoalSpawning : MonoBehaviour
         //The Object instantiation happens here.
         GameObject TemporaryObjectHandler;
         TemporaryObjectHandler = Instantiate(Object[rnd], ObjectEmitter.transform.position, ObjectEmitter.transform.rotation) as GameObject;
-
-        //Retrieve the Rigidbody component from the instantiated Bullet and control it.
-        Rigidbody Temporary_RigidBody;
-        Temporary_RigidBody = TemporaryObjectHandler.GetComponent<Rigidbody>();
     }
 
 

@@ -10,7 +10,7 @@ public class CoalTrigger : MonoBehaviour
 
     void OnTriggerEnter(Collider col)
     {
-        if (col.transform.root.tag == tagToCompare)
+        if (col.transform.root.tag == tagToCompare && GameMaster.coal < 176)
         {
             Debug.Log("coal entered");
             GameMaster.coal += 5;

@@ -313,3 +313,13 @@ Start: Begin adding lever to water spawner.
 End: Finished Ethics forms. Rotational values are weird, in inspecter they can be negative but in code always between 0-360. Restricting rotational movement is awkward because of this. Lever is physically functional.
 
 
+Week 12 16th - 20th Apr
+Monday 16th
+Start: Get water lever working
+
+End: Having it rotate like a lever is too difficult, instead just have it move up and down. Fixed bug with coal gauge overcharging. Worked on ending game play with speed/score interaction and gamestates.
+
+Tuesday 17th
+Start:
+
+End:

@@ -4,43 +4,98 @@ using UnityEngine;
 
 public class Score : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
+    private const float SpeedDecrement = 0.001f;
+    private const float SpeedIncrement = 0.0002f;
+
+    // Use this for initialization
+    void Start () {
         GameMaster.score = 10000;
 	}
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-        //Debug.Log(GameMaster.score);
-        if (GameMaster.score != 0)
+        Debug.Log(GameMaster.score);
+        Debug.Log(GameMaster.speed);
+        CalculateSpeed();
+    }
+
+
+    private void CalculateSpeed()
+    {
+        if (CoalWrong())
         {
-            if (CoalWrong())
+            GameMaster.speed -= SpeedDecrement;
+            if (CoalSuperWrong())
             {
-                GameMaster.score -= 1;
-            }
-            if (WaterWrong())
-            {
-                GameMaster.score -= 1;
+                GameMaster.speed -= SpeedDecrement;
             }
         }
-	}
+        else
+        {
+            if (GameMaster.speed <= GameMaster.maxSpeed)
+            {
+                GameMaster.speed += SpeedIncrement;
+            }
+        }
+        if (WaterWrong())
+        {
+            GameMaster.speed -= SpeedDecrement;
+            if (WaterSuperWrong())
+            {
+                GameMaster.speed -= SpeedDecrement;
+            }
+        }
+        else
+        {
+            if (GameMaster.speed <= GameMaster.maxSpeed)
+            {
+                GameMaster.speed += SpeedIncrement;
+            }
+        }
 
-    public bool CoalWrong()
+        if (GameMaster.speed < GameMaster.maxSpeed / 2)
+        {
+            GameMaster.score -= 3;
+        }
+        if (GameMaster.speed < 0.03f)
+        {
+            GameMaster.score = 0;
+        }
+    }
+
+    private bool CoalWrong()
     {
-        if (GameMaster.coal < 45 || GameMaster.coal > 135)
+        if (GameMaster.coal < GameMaster.lowerCoalWarning || GameMaster.coal > GameMaster.upperCoalWarning)
         {
             return true;
         }
         return false;
     }
 
-    public bool WaterWrong()
+    private bool CoalSuperWrong()
     {
-        if (GameMaster.coal < 45 || GameMaster.coal > 135)
+        if (GameMaster.coal < GameMaster.lowerCoalLimit || GameMaster.coal > GameMaster.upperCoalLimit)
         {
             return true;
         }
         return false;
     }
 
+    private bool WaterWrong()
+    {
+        if (GameMaster.temperature > GameMaster.waterWarning)
+        {
+            return true;
+        }
+        return false;
+    }
+
+    private bool WaterSuperWrong()
+    {
+        if (GameMaster.temperature > GameMaster.waterLimit)
+        {
+            return true;
+        }
+        return false;
+    }
 }
