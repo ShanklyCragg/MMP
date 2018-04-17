@@ -320,6 +320,6 @@ Start: Get water lever working
 End: Having it rotate like a lever is too difficult, instead just have it move up and down. Fixed bug with coal gauge overcharging. Worked on ending game play with speed/score interaction and gamestates.
 
 Tuesday 17th
-Start:
+Start: Discuss progress with David Hunter.
 
-End:
+End: Mentioned writing tests which I manually complete. Examples of these can be seen in completed past disertations from blackboard.
