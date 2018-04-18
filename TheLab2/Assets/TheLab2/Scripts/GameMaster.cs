@@ -12,6 +12,7 @@ public static class GameMaster
     public const float upperCoalLimit = 145;
     public const float waterWarning = 70;
     public const float waterLimit = 110;
+    public static float TotalTime = 0;
 
 
     public static float coal = 110;

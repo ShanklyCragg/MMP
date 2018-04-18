@@ -1,10 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class StateManager : MonoBehaviour {
-
-    enum States {Introduction, Start, StartingToFail, NearlyFailed, End};
 
     // Use this for initialization
     void Start () {
@@ -13,9 +12,11 @@ public class StateManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
+        Debug.Log(GameMaster.state);
+        Debug.Log(GameMaster.score);
         if (GameMaster.state == 0)
         {
-            //Say introduction phrase
+            
             GameMaster.state = 1;
         }
         else if (GameMaster.state == 1 && GameMaster.score < 8000)
@@ -34,10 +35,15 @@ public class StateManager : MonoBehaviour {
         {
             GameMaster.state = 5;
         }
-        else if (GameMaster.state == 5 && GameMaster.score < 2000)
+        else if (GameMaster.state == 5 && GameMaster.score < 5)
         {
             GameMaster.state = 6;
             //This is where the game ends
+            //show time.fixedTime;
+        }
+        else if (GameMaster.state == 6)
+        {
+            //if certain button pressed, reset scene with SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
         }
     }
 }

@@ -401,6 +401,9 @@
     <Compile Include="Assets\TheLab2\Scripts\CoalSpawner.cs" />
     <Compile Include="Assets\TheLab2\Scripts\CoalTrigger.cs" />
     <Compile Include="Assets\TheLab2\Scripts\CrusherTrigger.cs" />
+    <Compile Include="Assets\TheLab2\Scripts\DisplayScore.cs" />
+    <Compile Include="Assets\TheLab2\Scripts\DisplaySpeed.cs" />
+    <Compile Include="Assets\TheLab2\Scripts\DisplayTime.cs" />
     <Compile Include="Assets\TheLab2\Scripts\EnvironmentMover.cs" />
     <Compile Include="Assets\TheLab2\Scripts\EventManager\EventManager.cs" />
     <Compile Include="Assets\TheLab2\Scripts\EventManager\EventTriggerTest.cs" />
@@ -694,6 +697,7 @@
     <None Include="Assets\SteamVR\Resources\SteamVR_Fade.shader" />
     <None Include="Assets\SteamVR\Resources\SteamVR_SphericalProjection.shader" />
     <None Include="Assets\SteamVR\readme.txt" />
+    <None Include="Assets\TheLab2\Prefabs\3DText\3DText.shader" />
     <None Include="Assets\The_Texture_Lab\TL_Prototype_Textures_Pack\Documentation.txt" />
     <None Include="Assets\Tool Starter Kit\ReadME.txt" />
     <None Include="Assets\VRTK\Scripts\Internal\Shaders\AdaptiveQualityDebugVisualization.shader" />

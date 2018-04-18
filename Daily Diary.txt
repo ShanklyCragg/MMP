@@ -323,3 +323,8 @@ Tuesday 17th
 Start: Discuss progress with David Hunter.
 
 End: Mentioned writing tests which I manually complete. Examples of these can be seen in completed past disertations from blackboard.
+
+Wednesday 18th
+Start: Add end game state, think about visual feedback of score to player
+
+End: Just have text with score and speed displayed, with time as well.

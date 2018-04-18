@@ -14,52 +14,55 @@ public class Score : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-        Debug.Log(GameMaster.score);
-        Debug.Log(GameMaster.speed);
+        //Debug.Log(GameMaster.score);
+        //Debug.Log(GameMaster.speed);
         CalculateSpeed();
-    }
 
+    }
 
     private void CalculateSpeed()
     {
-        if (CoalWrong())
+        if (GameMaster.speed > 0)
         {
-            GameMaster.speed -= SpeedDecrement;
-            if (CoalSuperWrong())
+            if (CoalWrong())
             {
                 GameMaster.speed -= SpeedDecrement;
+                if (CoalSuperWrong())
+                {
+                    GameMaster.speed -= SpeedDecrement;
+                }
             }
-        }
-        else
-        {
-            if (GameMaster.speed <= GameMaster.maxSpeed)
+            else
             {
-                GameMaster.speed += SpeedIncrement;
+                if (GameMaster.speed <= GameMaster.maxSpeed)
+                {
+                    GameMaster.speed += SpeedIncrement;
+                }
             }
-        }
-        if (WaterWrong())
-        {
-            GameMaster.speed -= SpeedDecrement;
-            if (WaterSuperWrong())
+            if (WaterWrong())
             {
                 GameMaster.speed -= SpeedDecrement;
+                if (WaterSuperWrong())
+                {
+                    GameMaster.speed -= SpeedDecrement;
+                }
             }
-        }
-        else
-        {
-            if (GameMaster.speed <= GameMaster.maxSpeed)
+            else
             {
-                GameMaster.speed += SpeedIncrement;
+                if (GameMaster.speed <= GameMaster.maxSpeed)
+                {
+                    GameMaster.speed += SpeedIncrement;
+                }
             }
-        }
 
-        if (GameMaster.speed < GameMaster.maxSpeed / 2)
-        {
-            GameMaster.score -= 3;
-        }
-        if (GameMaster.speed < 0.03f)
-        {
-            GameMaster.score = 0;
+            if (GameMaster.speed < GameMaster.maxSpeed / 2)
+            {
+                GameMaster.score -= 3;
+            }
+            if (GameMaster.speed < 0.03f)
+            {
+                GameMaster.score = 0;
+            }
         }
     }
 
