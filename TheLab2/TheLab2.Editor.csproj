@@ -282,17 +282,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="TheLab2.Plugins.csproj">
-      <Project>{0C6CC9F8-D65A-0D28-32DA-00C76311443D}</Project>
-      <Name>TheLab2.Plugins</Name>
-    </ProjectReference>
     <ProjectReference Include="TheLab2.csproj">
       <Project>{2292DCC6-B23D-F19A-D7D7-35C7C2EB7503}</Project>
       <Name>TheLab2</Name>
-    </ProjectReference>
-    <ProjectReference Include="TheLab2.Editor.Plugins.csproj">
-      <Project>{45587879-25A2-C95A-9ECC-03B6AD685552}</Project>
-      <Name>TheLab2.Editor.Plugins</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -314,13 +306,7 @@
     <Compile Include="Assets\VRTK\Editor\VRTK_UpdatePrompt.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
-    <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
-    <None Include="Assets\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
-    <None Include="Assets\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
-    <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />
-    <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
-    <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
+    <None Include="Assets\EasyGrassSubstance\Documentation.txt" />
     <None Include="Assets\SteamVR\InteractionSystem\Core\Shaders\SeeThru.shader" />
     <None Include="Assets\SteamVR\InteractionSystem\Core\Shaders\Silhouette.shader" />
     <None Include="Assets\SteamVR\InteractionSystem\Hints\Shaders\ControllerButtonHints.shader" />
