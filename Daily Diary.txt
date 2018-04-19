@@ -328,3 +328,9 @@ Wednesday 18th
 Start: Add end game state, think about visual feedback of score to player
 
 End: Just have text with score and speed displayed, with time as well.
+
+Thursday 19th
+Start: Finish work on end game state.
+
+End:
+

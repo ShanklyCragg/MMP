@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Score : MonoBehaviour {
 
-    private const float SpeedDecrement = 0.001f;
-    private const float SpeedIncrement = 0.0002f;
+    private const float SpeedDecrement = 0.002f;
+    private const float SpeedIncrement = 0.0004f;
 
     // Use this for initialization
     void Start () {
@@ -14,10 +14,7 @@ public class Score : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-        //Debug.Log(GameMaster.score);
-        //Debug.Log(GameMaster.speed);
         CalculateSpeed();
-
     }
 
     private void CalculateSpeed()
@@ -57,7 +54,11 @@ public class Score : MonoBehaviour {
 
             if (GameMaster.speed < GameMaster.maxSpeed / 2)
             {
-                GameMaster.score -= 3;
+                //If both meters are green, then don't subtract score
+                if (CoalWrong() || WaterWrong())
+                {
+                    GameMaster.score -= 6;
+                }
             }
             if (GameMaster.speed < 0.03f)
             {

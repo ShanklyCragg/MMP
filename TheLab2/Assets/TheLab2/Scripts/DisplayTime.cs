@@ -15,8 +15,7 @@ public class DisplayTime : MonoBehaviour {
     void Update () {
         if (GameMaster.state != 6)
         {
-
-            textObject.text = ("Time: " + Time.fixedTime.ToString("F2"));
+            textObject.text = ("Time: " + (Time.fixedTime - GameMaster.totalTime).ToString("F2"));
         }
     }
 }

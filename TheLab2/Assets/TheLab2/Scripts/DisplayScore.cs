@@ -18,7 +18,6 @@ public class DisplayScore : MonoBehaviour {
         if (GameMaster.state != 6)
         {
             float score = GameMaster.score / 100;
-            Debug.Log("displayscore = " + score);
             textObject.text = ("Score: " + score.ToString());
         }
     }

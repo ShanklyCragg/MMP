@@ -16,6 +16,5 @@ public class EventTriggerTest : MonoBehaviour {
         {
             EventManager.TriggerEvent("ObjectIntoHand");
         }
-
     }
 }

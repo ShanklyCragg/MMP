@@ -12,13 +12,20 @@ public static class GameMaster
     public const float upperCoalLimit = 145;
     public const float waterWarning = 70;
     public const float waterLimit = 110;
-    public static float TotalTime = 0;
+    public static float totalTime = 0;
 
 
     public static float coal = 110;
     public static float temperature = 0;
-    public static float speed = 20;
+    public static float speed = 15;
     public static int score;
     public static int state;
+
+    public static void Reset()
+    {
+        coal = 110;
+        temperature = 0;
+        speed = 15;
+    }
 
 }

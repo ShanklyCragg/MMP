@@ -12,11 +12,8 @@ public class StateManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-        Debug.Log(GameMaster.state);
-        Debug.Log(GameMaster.score);
         if (GameMaster.state == 0)
         {
-            
             GameMaster.state = 1;
         }
         else if (GameMaster.state == 1 && GameMaster.score < 8000)
@@ -38,12 +35,16 @@ public class StateManager : MonoBehaviour {
         else if (GameMaster.state == 5 && GameMaster.score < 5)
         {
             GameMaster.state = 6;
-            //This is where the game ends
-            //show time.fixedTime;
         }
         else if (GameMaster.state == 6)
         {
+            GameMaster.totalTime = Time.fixedTime;
+
             //if certain button pressed, reset scene with SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
+            if (Input.GetAxis("openvr-r-trigger-press") > 0.1) {
+                GameMaster.Reset();
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
         }
     }
 }
