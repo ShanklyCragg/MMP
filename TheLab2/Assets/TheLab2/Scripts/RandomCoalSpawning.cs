@@ -2,27 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RandomCoalSpawning : MonoBehaviour
+/*
+ * 
+ */
+
+public class RandomCoalSpawning : Spawner
 {
-
-    public GameObject ObjectEmitter;
-    public GameObject[] Object;
-
-    public float maxTime = 5;
-    public float minTime = 2;
     public float maxTimeLowerLimit = 0.31f;
     public float minTimeLowerLimit = 0.51f;
 
     public AudioSource MachineRunning;
     public AudioSource MachineBreaking;
 
-    //current time
-    private float time;
-
-    //The time to spawn the object
-    private float spawnTime;
-
-    void Start()
+    protected override void Start()
     {
         //Instantiate time, and initialise first random timer
         time = 0;
@@ -30,7 +22,7 @@ public class RandomCoalSpawning : MonoBehaviour
         MachineRunning.Play();
     }
 
-    void FixedUpdate()
+    protected override void FixedUpdate()
     {
         //Counts up
         time += Time.deltaTime;
@@ -44,14 +36,8 @@ public class RandomCoalSpawning : MonoBehaviour
         }
     }
 
-    //Sets the random time between minTime and maxTime
-    void SetRandomTime()
-    {
-        spawnTime = Random.Range(minTime, maxTime);
-    }
-
     //Spawns the object and resets the time
-    void SpawnObject()
+    protected override void SpawnObject()
     {
         //Reset time to start
         time = 0;
@@ -67,7 +53,7 @@ public class RandomCoalSpawning : MonoBehaviour
         }
 
         //Max int is exclusive
-        int rnd = Random.Range(0, 3);
+        int rnd = Random.Range(0, Object.Length);
 
         //The Object instantiation happens here.
         GameObject TemporaryObjectHandler;

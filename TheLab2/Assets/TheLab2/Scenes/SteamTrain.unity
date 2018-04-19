@@ -15673,7 +15673,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectEmitter: {fileID: 1792299453}
-  Object: {fileID: 1509438937239204, guid: 3c991d52351c5a24fa354a3b9cdf8068, type: 2}
+  Object:
+  - {fileID: 1509438937239204, guid: 3c991d52351c5a24fa354a3b9cdf8068, type: 2}
   maxTime: 0.03
   minTime: 0.03
 --- !u!54 &1792299456
@@ -16668,7 +16669,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2008615789
 Transform:
   m_ObjectHideFlags: 0

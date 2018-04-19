@@ -2,29 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WaterSpawner : MonoBehaviour
+public class WaterSpawner : Spawner
 {
 
-    public GameObject ObjectEmitter;
-    public GameObject Object;
-
-    public float maxTime = 5;
-    public float minTime = 2;
-
-    //current time
-    private float time;
-
-    //The time to spawn the object
-    private float spawnTime;
-
-    void Start()
+    protected override void Start()
     {
         //Instantiate time, and initialise first random timer
         time = 0;
         SetRandomTime();
     }
 
-    void FixedUpdate()
+    protected override void FixedUpdate()
     {
         //Counts up
         time += Time.deltaTime;
@@ -37,14 +25,8 @@ public class WaterSpawner : MonoBehaviour
         }
     }
 
-    //Sets the random time between minTime and maxTime
-    void SetRandomTime()
-    {
-        spawnTime = Random.Range(minTime, maxTime);
-    }
-
     //Spawns the object and resets the time
-    void SpawnObject()
+    protected override void SpawnObject()
     {
         //Reset time to start
         time = 0;
@@ -56,7 +38,7 @@ public class WaterSpawner : MonoBehaviour
 
         //The Object instantiation happens here.
         GameObject TemporaryObjectHandler;
-        TemporaryObjectHandler = Instantiate(Object, (ObjectEmitter.transform.position + randPosArray), ObjectEmitter.transform.rotation) as GameObject;
+        TemporaryObjectHandler = Instantiate(Object[0], (ObjectEmitter.transform.position + randPosArray), ObjectEmitter.transform.rotation) as GameObject;
     }
 
 }

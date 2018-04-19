@@ -332,5 +332,9 @@ End: Just have text with score and speed displayed, with time as well.
 Thursday 19th
 Start: Finish work on end game state.
 
-End:
+End: Game can now end and be restarted. Reduced total file size to ~600mb. Github still says 1.2gig because it still tracks deleted files. Added inheritance to Spawner objects
 
+Friday 20th
+Start:
+
+End:

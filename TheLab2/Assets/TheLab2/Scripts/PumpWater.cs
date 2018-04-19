@@ -56,7 +56,7 @@ public class PumpWater : MonoBehaviour {
         if (this.transform.position.y > transform.GetComponent<RestrictMovement>().yUpper - 0.02f)
         {
             pumpReady = true;
-            otherObject.GetComponent<WaterSpawner>().enabled = false;
+            //otherObject.GetComponent<WaterSpawner>().enabled = false;
         }
     }
 
