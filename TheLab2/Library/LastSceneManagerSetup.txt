@@ -1,4 +1,0 @@
-sceneSetups:
-- path: Assets/TheLab2/Scenes/SteamTrain.unity
-  isLoaded: 1
-  isActive: 1
