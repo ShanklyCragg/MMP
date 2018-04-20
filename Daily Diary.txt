@@ -337,4 +337,4 @@ End: Game can now end and be restarted. Reduced total file size to ~600mb. Githu
 Friday 20th
 Start: Thoroughly comment all code
 
-End:
+End: All code commented with XML documentation. Added inheritance to text displays.

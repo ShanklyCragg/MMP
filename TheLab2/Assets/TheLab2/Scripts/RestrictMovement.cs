@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Restrict the area an object can move in
+/// </summary>
 public class RestrictMovement : MonoBehaviour {
 
     public float xLower = -1000;
@@ -13,18 +16,18 @@ public class RestrictMovement : MonoBehaviour {
     public float zLower = -1000;
     public float zUpper = 1000;
 
-
-
-    // Use this for initialization
-    void Start () {
-		
-	}
 	
-	// Update is called once per frame
+    /// <summary>
+    /// Restrict the movement
+    /// </summary>
 	void Update () {
         RestrictPositionMovement();
     }
 
+    /// <summary>
+    /// Check if the object is out of the defined bounds. 
+    /// If so, move it into the bounds.
+    /// </summary>
     private void RestrictPositionMovement()
     {
         if (this.transform.position.x < xLower)

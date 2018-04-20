@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Master Class which gives access to a variety of conostants and variables used throughout the program
+/// </summary>
 public static class GameMaster
 {
 
@@ -21,6 +24,9 @@ public static class GameMaster
     public static int score;
     public static int state;
 
+    /// <summary>
+    /// Set the values back their starting values when reloading the scene
+    /// </summary>
     public static void Reset()
     {
         coal = 110;

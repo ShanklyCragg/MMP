@@ -2,19 +2,30 @@
 using VRTK;
 using System.Collections;
 
-//h ttps://github.com/thestonefox/VRTK/issues/643
+/// <summary>
+/// Fix the coal spawner by "hitting" it 3 times
+/// </summary>
 public class FixCoalSpawner : MonoBehaviour
 {
 
     private int count = 0;
     private const int countNeeded = 3;
 
+    /// <summary>
+    /// Create the custom event
+    /// </summary>
     void Start()
     {
         CreateTouchEvent();
     }
 
-    //Hook into vrtk interactable object to inject my own functions
+    /// <summary>
+    /// Add a new custom event to the VRTK interaction event handler.
+    /// </summary>
+    /// <remarks>
+    /// This code is my adaptation of a github issue which can be seen here https://github.com/thestonefox/VRTK/issues/643
+    /// My work is transformative but not wholly original.
+    /// </remarks>
     private void CreateTouchEvent()
     {
         //make sure the object has the VRTK script attached. 
@@ -28,10 +39,14 @@ public class FixCoalSpawner : MonoBehaviour
         GetComponent<VRTK_InteractableObject>().InteractableObjectTouched += new InteractableObjectEventHandler(ObjectTouched);
     }
 
-    //my custom event function
+    /// <summary>
+    /// Count number of times coal spawner is hit.
+    /// Once it has been hit the required number of times, begin spawning coal again
+    /// </summary>
+    /// <param name="sender"> The Object being touched </param>
+    /// <param name="e"> Information regarding the touch event </param>
     private void ObjectTouched(object sender, InteractableObjectEventArgs e)
     {
-        Debug.Log("Im Touched");
 
         count += 1;
 

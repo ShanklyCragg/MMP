@@ -2,18 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DisplaySpeed : MonoBehaviour {
+/// <summary>
+/// Update the in game text to display the speed of the train.
+/// </summary>
+public class DisplaySpeed : DisplayText {
 
-    private TextMesh textObject;
-
-    // Use this for initialization
-    void Start()
-    {
-        textObject = this.GetComponent<TextMesh>();
-    }
-
-    // Update is called once per frame
-    void Update()
+    /// <summary>
+    /// As long as the game isn't over (meaning not gamestate 6). 
+    /// Show the current speed of the train.
+    /// </summary>
+    protected override void Update()
     {
         if (GameMaster.state != 6)
         {

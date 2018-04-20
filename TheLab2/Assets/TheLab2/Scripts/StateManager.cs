@@ -3,14 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// Keeps track of current game state.
+/// </summary>
 public class StateManager : MonoBehaviour {
 
-    // Use this for initialization
+    /// <summary>
+    /// Start off in initial game state
+    /// </summary>
     void Start () {
         GameMaster.state = 0;
 	}
 	
-	// Update is called once per frame
+	/// <summary>
+    /// Check the current game state
+    /// Once game is over, check if the user wants to restart
+    /// </summary>
 	void FixedUpdate () {
         if (GameMaster.state == 0)
         {

@@ -2,17 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Keeps track of the current state of the game regarding speed and score.
+/// </summary>
 public class Score : MonoBehaviour {
 
     private const float SpeedDecrement = 0.002f;
     private const float SpeedIncrement = 0.0004f;
 
-    // Use this for initialization
+    /// <summary>
+    /// Initialise score at 10,000
+    /// </summary>
     void Start () {
         GameMaster.score = 10000;
 	}
 	
-	// Update is called once per frame
+	/// <summary>
+    /// Update the speed and score in accordance with the performance of the user
+    /// </summary>
 	void FixedUpdate () {
         CalculateSpeed();
     }
@@ -67,6 +74,10 @@ public class Score : MonoBehaviour {
         }
     }
 
+    /// <summary>
+    /// Check is the coal gauge is in the "warning" state
+    /// </summary>
+    /// <returns> boolean if it is or isn't </returns>
     private bool CoalWrong()
     {
         if (GameMaster.coal < GameMaster.LowerCoalWarning || GameMaster.coal > GameMaster.UpperCoalWarning)
@@ -76,6 +87,10 @@ public class Score : MonoBehaviour {
         return false;
     }
 
+    /// <summary>
+    /// Check is the coal gauge is in the "Limit" state
+    /// </summary>
+    /// <returns> boolean if it is or isn't </returns>
     private bool CoalSuperWrong()
     {
         if (GameMaster.coal < GameMaster.LowerCoalLimit || GameMaster.coal > GameMaster.UpperCoalLimit)
@@ -85,6 +100,10 @@ public class Score : MonoBehaviour {
         return false;
     }
 
+    /// <summary>
+    /// Check is the temperature gauge is in the "warning" state
+    /// </summary>
+    /// <returns> boolean if it is or isn't </returns>
     private bool WaterWrong()
     {
         if (GameMaster.temperature > GameMaster.WaterWarning)
@@ -94,6 +113,10 @@ public class Score : MonoBehaviour {
         return false;
     }
 
+    /// <summary>
+    /// Check is the temperature gauge is in the "Limit" state
+    /// </summary>
+    /// <returns> boolean if it is or isn't </returns>
     private bool WaterSuperWrong()
     {
         if (GameMaster.temperature > GameMaster.WaterLimit)

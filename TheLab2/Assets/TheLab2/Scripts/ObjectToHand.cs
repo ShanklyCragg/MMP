@@ -3,27 +3,43 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+/// <summary>
+/// Allow the object to be summoned in front of the user
+/// </summary>
 public class ObjectToHand : MonoBehaviour
 {
 
     private UnityAction someListener;
 
+
+    /// <summary>
+    /// Once the object this is attached to spawns, create the listener
+    /// </summary>
     private void Awake()
     {
         someListener = new UnityAction(ObjectIntoHand);
     }
 
+    /// <summary>
+    /// Once the object this is attached to spawns, create the listener
+    /// </summary>
     private void OnEnable()
     {
         EventManager.StartListening("ObjectIntoHand", someListener);
     }
 
-    //need to stop listening on disable to avoid memory leaks
+    /// <summary>
+    /// Stop listening on disable to avoid wasting memory
+    /// </summary>
     private void OnDisable()
     {
         EventManager.StopListening("ObjectIntoHand", someListener);
     }
 
+    /// <summary>
+    /// Move the object into position to be grabbed by the right controller
+    /// Reset the velocity and angular velocity so it acts as the user imagines it should
+    /// </summary>
     void ObjectIntoHand()
     {
         var controller = GameObject.FindGameObjectsWithTag("RightController");

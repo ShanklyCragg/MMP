@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Restrict the rotational room for an object
+/// </summary>
 public class RestrictRotation : MonoBehaviour {
 
     public float xLowerRot = 0;
@@ -13,16 +16,18 @@ public class RestrictRotation : MonoBehaviour {
     public float zLowerRot = 0;
     public float zUpperRot = 360;
 
-    // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    /// <summary>
+    /// Restrict the rotation
+    /// </summary>
+    void Update () {
         RestrictRotationMovement();
     }
 
+    /// <summary>
+    /// Check if the object is out of the defined bounds. 
+    /// If so, spin it into the bounds.
+    /// </summary>
     private void RestrictRotationMovement()
     {
 
