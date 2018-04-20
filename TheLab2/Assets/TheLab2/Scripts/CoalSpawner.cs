@@ -87,6 +87,7 @@ public class CoalSpawner : Spawner
         int isBreak = Random.Range(0, 1000);
         if (isBreak < 50)
         {
+            //Disable spawning, enable script to allow object to be fixed.
             (GetComponent("RandomCoalSpawning") as MonoBehaviour).enabled = false;
             (GetComponent("FixCoalSpawner") as MonoBehaviour).enabled = true;
             transform.Find("WhiteSmoke").gameObject.SetActive(true);

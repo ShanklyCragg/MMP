@@ -16874,7 +16874,7 @@ Transform:
   m_LocalScale: {x: 1, y: 0.099999994, z: 1}
   m_Children: []
   m_Father: {fileID: 2061532137}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180.00002}
 --- !u!23 &2029568815
 MeshRenderer:
@@ -17041,60 +17041,6 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2034230610}
---- !u!1 &2039025409
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 2039025410}
-  - component: {fileID: 2039025412}
-  - component: {fileID: 2039025411}
-  m_Layer: 0
-  m_Name: Trigger
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2039025410
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2039025409}
-  m_LocalRotation: {x: -0, y: -0.000000014901161, z: 1, w: -0.00000020861626}
-  m_LocalPosition: {x: -1.005, y: -0.073, z: 0.508}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2061532137}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180.00002}
---- !u!114 &2039025411
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2039025409}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43481b0cf4a97ca43939ee12a48004bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tagToCompare: Coal
---- !u!65 &2039025412
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2039025409}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2048964537
 GameObject:
   m_ObjectHideFlags: 0
@@ -17239,7 +17185,6 @@ Transform:
   - {fileID: 744852583}
   - {fileID: 544586228}
   - {fileID: 523672132}
-  - {fileID: 2039025410}
   - {fileID: 2029568814}
   m_Father: {fileID: 1497767736}
   m_RootOrder: 8
