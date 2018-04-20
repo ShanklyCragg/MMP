@@ -32,7 +32,7 @@ public class CoalGaugeNeedle : Gauge {
     /// </summary>
     void UpdateCoalAmount()
     {
-        if (GameMaster.coal >= minAmount)
+        if (GameMaster.coal >= MinAmount)
         {
             GameMaster.coal -= deteriationSpeed;
         }
@@ -57,7 +57,7 @@ public class CoalGaugeNeedle : Gauge {
     /// </returns>
     protected override Vector3 CalculateCurrentAngle()
     {
-        return new Vector3(0, (maxAmount / 2), GameMaster.coal - (maxAmount / 2));
+        return new Vector3(0, (MaxAmount / 2), GameMaster.coal - (MaxAmount / 2));
     }
 
 }

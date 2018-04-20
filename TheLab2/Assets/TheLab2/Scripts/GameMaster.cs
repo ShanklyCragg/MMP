@@ -5,13 +5,13 @@ using UnityEngine;
 public static class GameMaster
 {
 
-    public const float maxSpeed = 20;
-    public const float lowerCoalWarning = 73;
-    public const float lowerCoalLimit = 55;
-    public const float upperCoalWarning = 132;
-    public const float upperCoalLimit = 145;
-    public const float waterWarning = 70;
-    public const float waterLimit = 110;
+    public const float MaxSpeed = 20;
+    public const float LowerCoalWarning = 73;
+    public const float LowerCoalLimit = 55;
+    public const float UpperCoalWarning = 132;
+    public const float UpperCoalLimit = 145;
+    public const float WaterWarning = 70;
+    public const float WaterLimit = 110;
     public static float totalTime = 0;
 
 

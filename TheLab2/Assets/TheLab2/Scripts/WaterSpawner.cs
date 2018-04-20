@@ -2,16 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Spawn water Objects for use as coolent into the water entrance
+/// </summary>
 public class WaterSpawner : Spawner
 {
 
+    /// <summary>
+    /// Initialise first random timer
+    /// </summary>
     protected override void Start()
     {
-        //Instantiate time, and initialise first random timer
-        time = 0;
         SetRandomTime();
     }
 
+    /// <summary>
+    /// Count the time until you need to spawn an object, at which point, set a new random time.
+    /// </summary>
     protected override void FixedUpdate()
     {
         //Counts up
@@ -25,7 +32,12 @@ public class WaterSpawner : Spawner
         }
     }
 
-    //Spawns the object and resets the time
+    /// <summary>
+    /// Spawns the Object, and resets the time for the next spawn.
+    /// </summary>
+    /// <remarks>
+    /// To mimick the hectic nature of water, we randomise the spawn point to create a shower like effect
+    /// </remarks>
     protected override void SpawnObject()
     {
         //Reset time to start

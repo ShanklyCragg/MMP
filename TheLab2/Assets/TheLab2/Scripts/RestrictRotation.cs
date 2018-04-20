@@ -28,26 +28,26 @@ public class RestrictRotation : MonoBehaviour {
 
         Vector3 p = this.transform.rotation.eulerAngles;
 
-        if (this.transform.rotation.x < xLowerRot)
-        {
-            p.x = xLowerRot;
-            this.transform.rotation = Quaternion.Euler(p);
-        }
-        if (this.transform.rotation.x > xUpperRot)
-        {
-            p.x = xUpperRot;
-            this.transform.rotation = Quaternion.Euler(p);
-        }
-        if (this.transform.rotation.y < yLowerRot)
-        {
-            p.y = yLowerRot;
-            this.transform.rotation = Quaternion.Euler(p);
-        }
-        if (this.transform.rotation.y > yUpperRot)
-        {
-            p.y = yUpperRot;
-            this.transform.rotation = Quaternion.Euler(p);
-        }
+        //if (this.transform.rotation.eulerAngles.x < xLowerRot && this.transform.rotation.eulerAngles.x > yUpperRot)
+        //{
+        //    p.x = xLowerRot;
+        //    this.transform.rotation = Quaternion.Euler(p);
+        //}
+        //if (this.transform.rotation.eulerAngles.x > xUpperRot && this.transform.rotation.eulerAngles.x < xLowerRot)
+        //{
+        //    p.x = xUpperRot;
+        //    this.transform.rotation = Quaternion.Euler(p);
+        //}
+        //if (this.transform.rotation.eulerAngles.y < yLowerRot && this.transform.rotation.eulerAngles.y > yUpperRot)
+        //{
+        //    p.y = yLowerRot;
+        //    this.transform.rotation = Quaternion.Euler(p);
+        //}
+        //if (this.transform.rotation.eulerAngles.y > yUpperRot && this.transform.rotation.eulerAngles.y < yLowerRot)
+        //{
+        //    p.y = yUpperRot;
+        //    this.transform.rotation = Quaternion.Euler(p);
+        //}
         if (this.transform.rotation.eulerAngles.z < zLowerRot && this.transform.rotation.eulerAngles.z > zUpperRot + 5)
         {
             p.z = zLowerRot;

@@ -11,8 +11,8 @@ using UnityEngine;
 /// </remarks>
 public abstract class Gauge : MonoBehaviour {
 
-    public const float maxAmount = 180;
-    public const float minAmount = 0;
+    public const float MaxAmount = 180;
+    public const float MinAmount = 0;
 
     /// <summary>
     /// Set's the initial angle of the needle

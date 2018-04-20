@@ -11,6 +11,8 @@ using UnityEngine;
 /// </remarks>
 public class TempGaugeNeedle : Gauge {
 
+    private const float baseIncrementAmount = 0.03f;
+
     /// <summary>
     /// Runs the necessary functions to correctly update the position of the needle
     /// </summary>
@@ -29,19 +31,19 @@ public class TempGaugeNeedle : Gauge {
     /// </remarks>
     void CalculateTemperature()
     {
-        if (GameMaster.temperature <= maxAmount)
+        if (GameMaster.temperature <= MaxAmount)
         {
-            if (GameMaster.coal > 150)
+            if (GameMaster.coal > GameMaster.UpperCoalLimit)
             {
-                GameMaster.temperature += 0.09f;
+                GameMaster.temperature += (baseIncrementAmount * 3);
             }
-            else if (GameMaster.coal < 50)
+            else if (GameMaster.coal < GameMaster.LowerCoalLimit)
             {
-                GameMaster.temperature += 0.03f;
+                GameMaster.temperature += baseIncrementAmount;
             }
             else
             {
-                GameMaster.temperature += 0.06f;
+                GameMaster.temperature += (baseIncrementAmount * 2);
             }
         }
     }
@@ -54,7 +56,7 @@ public class TempGaugeNeedle : Gauge {
     /// </returns>
     protected override Vector3 CalculateCurrentAngle()
     {
-        return new Vector3(0, (maxAmount / 2), GameMaster.temperature - (maxAmount / 2));
+        return new Vector3(0, (MaxAmount / 2), GameMaster.temperature - (MaxAmount / 2));
     }
 
 }

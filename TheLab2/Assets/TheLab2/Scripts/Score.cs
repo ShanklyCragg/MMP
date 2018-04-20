@@ -31,7 +31,7 @@ public class Score : MonoBehaviour {
             }
             else
             {
-                if (GameMaster.speed <= GameMaster.maxSpeed)
+                if (GameMaster.speed <= GameMaster.MaxSpeed)
                 {
                     GameMaster.speed += SpeedIncrement;
                 }
@@ -46,13 +46,13 @@ public class Score : MonoBehaviour {
             }
             else
             {
-                if (GameMaster.speed <= GameMaster.maxSpeed)
+                if (GameMaster.speed <= GameMaster.MaxSpeed)
                 {
                     GameMaster.speed += SpeedIncrement;
                 }
             }
 
-            if (GameMaster.speed < GameMaster.maxSpeed / 2)
+            if (GameMaster.speed < GameMaster.MaxSpeed / 2)
             {
                 //If both meters are green, then don't subtract score
                 if (CoalWrong() || WaterWrong())
@@ -69,7 +69,7 @@ public class Score : MonoBehaviour {
 
     private bool CoalWrong()
     {
-        if (GameMaster.coal < GameMaster.lowerCoalWarning || GameMaster.coal > GameMaster.upperCoalWarning)
+        if (GameMaster.coal < GameMaster.LowerCoalWarning || GameMaster.coal > GameMaster.UpperCoalWarning)
         {
             return true;
         }
@@ -78,7 +78,7 @@ public class Score : MonoBehaviour {
 
     private bool CoalSuperWrong()
     {
-        if (GameMaster.coal < GameMaster.lowerCoalLimit || GameMaster.coal > GameMaster.upperCoalLimit)
+        if (GameMaster.coal < GameMaster.LowerCoalLimit || GameMaster.coal > GameMaster.UpperCoalLimit)
         {
             return true;
         }
@@ -87,7 +87,7 @@ public class Score : MonoBehaviour {
 
     private bool WaterWrong()
     {
-        if (GameMaster.temperature > GameMaster.waterWarning)
+        if (GameMaster.temperature > GameMaster.WaterWarning)
         {
             return true;
         }
@@ -96,7 +96,7 @@ public class Score : MonoBehaviour {
 
     private bool WaterSuperWrong()
     {
-        if (GameMaster.temperature > GameMaster.waterLimit)
+        if (GameMaster.temperature > GameMaster.WaterLimit)
         {
             return true;
         }
