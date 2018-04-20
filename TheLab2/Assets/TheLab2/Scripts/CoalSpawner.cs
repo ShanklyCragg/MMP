@@ -2,32 +2,76 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CoalSpawner : MonoBehaviour {
+/*
+ * 
+ */
 
-    private bool machineStatus;
+public class CoalSpawner : Spawner
+{
+    public float maxTimeLowerLimit = 0.31f;
+    public float minTimeLowerLimit = 0.51f;
 
-    public RandomCoalSpawning coalSpawner_;
-    //public CoalAudio coalAudio;
-    //public BreakCoalSpawner coalBreaker_;
-    public FixCoalSpawner fixCoalSpawner_;
+    public AudioSource MachineRunning;
+    public AudioSource MachineBreaking;
 
-	// Use this for initialization
-	void Start () {
-        machineStatus = true;
-	}
-	
-	// Update is called once per frame
-	void FixedUpdate () {
-        if (machineStatus)
-        {
-            //coalSpawner();
-            //PlayAudio();
-            //machineStatus = coalBreaker_;
-        }
-        else if (machineStatus != true) {
-            //PlayAudio();
-            //FixCoalSpawner();
-        }
-
+    protected override void Start()
+    {
+        //Instantiate time, and initialise first random timer
+        time = 0;
+        SetRandomTime();
+        MachineRunning.Play();
     }
+
+    protected override void FixedUpdate()
+    {
+        //Counts up
+        time += Time.deltaTime;
+
+        //Check if its the right time to spawn the object
+        if (time >= spawnTime)
+        {
+            SpawnObject();
+            SetRandomTime();
+            BreakMachine();
+        }
+    }
+
+    //Spawns the object and resets the time
+    protected override void SpawnObject()
+    {
+        //Reset time to start
+        time = 0;
+
+        //Reduce timers slightly to a minmum
+        if (minTime > minTimeLowerLimit)
+        {
+            minTime -= 0.1f;
+        }
+        if (maxTime > maxTimeLowerLimit)
+        {
+            maxTime -= 0.1f;
+        }
+
+        //Max int is exclusive
+        int rnd = Random.Range(0, Object.Length);
+
+        //The Object instantiation happens here.
+        GameObject TemporaryObjectHandler;
+        TemporaryObjectHandler = Instantiate(Object[rnd], ObjectEmitter.transform.position, ObjectEmitter.transform.rotation) as GameObject;
+    }
+
+
+    void BreakMachine()
+    {
+        int isBreak = Random.Range(0, 1000);
+        if (isBreak < 50)
+        {
+            (GetComponent("RandomCoalSpawning") as MonoBehaviour).enabled = false;
+            (GetComponent("FixCoalSpawner") as MonoBehaviour).enabled = true;
+            transform.Find("WhiteSmoke").gameObject.SetActive(true);
+            MachineRunning.Stop();
+            MachineBreaking.Play();
+        }
+    }
+
 }

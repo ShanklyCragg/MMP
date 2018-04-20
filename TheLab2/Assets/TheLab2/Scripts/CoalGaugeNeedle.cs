@@ -2,47 +2,62 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CoalGaugeNeedle : MonoBehaviour {
 
-    public const float coalAmountMax = 180;
-    public const float coalAmountMin = 0;
+/// <summary>
+/// Determines the angle the Coal Gauge Needle should point at.
+/// Based on amount of Coal.
+/// Determines how much to decrease coal amount by every fixed update.
+/// This increases the every fixed update up to a maximum.
+/// </summary>
+/// <remarks>
+/// This class controls the Coal gauge and its needle.
+/// </remarks>
+public class CoalGaugeNeedle : Gauge {
 
     public float deteriationSpeed;
     public float deteriationIncrease;
     public float deteriationMax;
 
-    // Use this for initialization
-    void Start () {
-        this.transform.rotation = Quaternion.Euler(CalculateCurrentAngle());
-	}
-	
-	void FixedUpdate () {
-        GameMaster.coal = UpdateCoalAmount();
-        deteriationSpeed = UpdateDeteriationSpeed();
+    /// <summary>
+    /// Runs the necessary functions to correctly update the position of the needle
+    /// </summary>
+    protected override void FixedUpdate () {
+        UpdateCoalAmount();
+        UpdateDeteriationSpeed();
         this.transform.rotation = Quaternion.Euler(CalculateCurrentAngle());
     }
 
-    float UpdateCoalAmount()
+    /// <summary>
+    /// As long as there is more than zero coal, decrease the coal amount by the deteriation amount.
+    /// </summary>
+    void UpdateCoalAmount()
     {
-        if (GameMaster.coal >= coalAmountMin)
+        if (GameMaster.coal >= minAmount)
         {
             GameMaster.coal -= deteriationSpeed;
         }
-        return GameMaster.coal;
     }
 
-    float UpdateDeteriationSpeed()
+    /// <summary>
+    /// As long as the deteriation speed is less than the max deteriation speed, increase the deteriation speed.
+    /// </summary>
+    void UpdateDeteriationSpeed()
     {
         if (deteriationSpeed <= deteriationMax)
         {
             deteriationSpeed += deteriationIncrease;
         }
-        return deteriationSpeed;
     }
 
-    Vector3 CalculateCurrentAngle()
+    /// <summary>
+    /// Calculates the angles for the Vector3 belonging to the needle.
+    /// </summary>
+    /// <returns>
+    /// A Vector3 angle for the coal gauge needle
+    /// </returns>
+    protected override Vector3 CalculateCurrentAngle()
     {
-        return new Vector3(0, (coalAmountMax / 2), GameMaster.coal - (coalAmountMax/2));
+        return new Vector3(0, (maxAmount / 2), GameMaster.coal - (maxAmount / 2));
     }
 
 }

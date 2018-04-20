@@ -2,26 +2,34 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TempGaugeNeedle : MonoBehaviour {
+/// <summary>
+/// Determines the angle the Temperature Gauge Needle should point at.
+/// Based on temperature which is effected by water.
+/// </summary>
+/// <remarks>
+/// This class controls the Temperature gauge and its needle.
+/// </remarks>
+public class TempGaugeNeedle : Gauge {
 
-    public const float tempAmountMax = 180;
-    public const float tempAmountMin = 0;
-
-    // Use this for initialization
-    void Start()
-    {
-        this.transform.rotation = Quaternion.Euler(CalculateCurrentAngle());
-    }
-
-    void FixedUpdate()
+    /// <summary>
+    /// Runs the necessary functions to correctly update the position of the needle
+    /// </summary>
+    protected override void FixedUpdate()
     {
         CalculateTemperature();
         this.transform.rotation = Quaternion.Euler(CalculateCurrentAngle());
     }
 
+    /// <summary>
+    /// The amount of coal determines how much to increase the temperature by each update.
+    /// </summary>
+    /// <remarks>
+    /// More coal = quicker increase
+    /// Less coal = slower increase
+    /// </remarks>
     void CalculateTemperature()
     {
-        if (GameMaster.temperature <= tempAmountMax)
+        if (GameMaster.temperature <= maxAmount)
         {
             if (GameMaster.coal > 150)
             {
@@ -38,9 +46,15 @@ public class TempGaugeNeedle : MonoBehaviour {
         }
     }
 
-    Vector3 CalculateCurrentAngle()
+    /// <summary>
+    /// Calculates the angles for the Vector3 belonging to the needle.
+    /// </summary>
+    /// <returns>
+    /// A Vector3 angle for the temperature gauge needle
+    /// </returns>
+    protected override Vector3 CalculateCurrentAngle()
     {
-        return new Vector3(0, (tempAmountMax/2), GameMaster.temperature - (tempAmountMax/2));
+        return new Vector3(0, (maxAmount / 2), GameMaster.temperature - (maxAmount / 2));
     }
 
 }
