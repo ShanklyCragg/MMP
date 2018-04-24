@@ -338,3 +338,14 @@ Friday 20th
 Start: Thoroughly comment all code
 
 End: All code commented with XML documentation. Added inheritance to text displays.
+
+Week 13 23rd - 27th Apr
+Monday 23rd
+Start: Work on Report
+
+End: 1,000ish words written, abstract, analysis and process worked on.
+
+Tuesday 24th
+Start: More work on report
+
+End: "Professional critism" - say why algorithms don't help you in particular.
