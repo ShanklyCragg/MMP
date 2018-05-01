@@ -12,6 +12,6 @@ public class WaterDeleter : MonoBehaviour {
     /// This stops spawning infinite water to lag the game
     /// </summary>
     void Start () {
-        Destroy(this.gameObject, 13);
+        Destroy(this.gameObject, 20);
     }
 }
